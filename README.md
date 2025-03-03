@@ -10,8 +10,8 @@ Archivos geojson
 colorbrewer: https://colorbrewer2.org/
 Para las paletas de colores
 
-Para scrapear los archivos geoJson.
-Se descargan de links.txt y se guardan en data/geojson:
+Para scrapear los archivos geoJson:
+(Se descargan de links.txt y se guardan en data/geojson)
 ```
 python3 downloader.py
 ```

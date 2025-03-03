@@ -2,3 +2,6 @@
 .Rdata
 *.Rproj
 .Rproj.user
+data/geojson/*
+src/geoCompWithR.R
+src/samples.R
