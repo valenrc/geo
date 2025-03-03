@@ -14,9 +14,9 @@ def download_file(url, filename):
     geojson_dir = os.path.join(script_dir, "..", "data", "geojson")  # Navigate to data/geojson
     os.makedirs(geojson_dir, exist_ok=True)
     
-    # Asegurar que el archivo tenga la extensión .gjson
-    if not filename.endswith(".gjson"):
-        filename += ".gjson"
+    # Asegurar que el archivo tenga la extensión .geojson
+    if not filename.endswith(".geojson"):
+        filename += ".geojson"
     
     filepath = os.path.join(geojson_dir, filename)
     
