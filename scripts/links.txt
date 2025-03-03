@@ -24,3 +24,15 @@ zona_frontera_aerea
 https://wms.ign.gob.ar/geoserver/ign/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ign%3Azona_de_frontera&outputFormat=application%2Fjson
 zona_economica_exclusiva
 https://wms.ign.gob.ar/geoserver/ign/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ign%3Azona_economica_exclusiva_argentina&outputFormat=application%2Fjson
+universidades
+https://wms.ign.gob.ar/geoserver/ign/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ign%3Apuntos_de_ciencia_y_educacion_020602&outputFormat=application%2Fjson
+instalacion_deportiva_y_esparcimiento
+https://wms.ign.gob.ar/geoserver/ign/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ign%3Apuntos_de_recreacion_AK040&outputFormat=application%2Fjson
+edificio_religioso
+https://wms.ign.gob.ar/geoserver/ign/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ign%3Acultura_y_religion_AL330&outputFormat=application%2Fjson
+base_antartica
+https://wms.ign.gob.ar/geoserver/ign/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ign%3Abahra_base_antartica&outputFormat=application%2Fjson
+estacion_ferrocaril
+https://wms.ign.gob.ar/geoserver/ign/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ign%3Apuntos_de_transporte_ferroviario_AN070&outputFormat=application%2Fjson
+ferrocaril
+https://wms.ign.gob.ar/geoserver/ign/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ign%3Alineas_de_transporte_ferroviario_AN010&outputFormat=application%2Fjson

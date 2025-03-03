@@ -5,10 +5,6 @@ import concurrent.futures
 # Script para descargar contenido del archivo links.txt que contiene urls del ign
 
 def download_file(url, filename):
-    # Realizar la solicitud GET
-    response = requests.get(url, stream=True)
-    response.raise_for_status()  # Lanza una excepción si hay un error en la respuesta
-    
     # Crear la carpeta de descargas si no existe
     script_dir = os.path.dirname(os.path.abspath(__file__))
     geojson_dir = os.path.join(script_dir, "..", "data", "geojson")  # Navigate to data/geojson
@@ -20,12 +16,20 @@ def download_file(url, filename):
     
     filepath = os.path.join(geojson_dir, filename)
     
+    # Verificar si el archivo ya existe
+    if os.path.exists(filepath):
+        return
+    
+    # Realizar la solicitud GET
+    response = requests.get(url, stream=True)
+    response.raise_for_status()  # Lanza una excepción si hay un error en la respuesta
+    
     # Guardar el archivo con el nombre especificado
     with open(filepath, 'wb') as file:
         for chunk in response.iter_content(chunk_size=8192):
             file.write(chunk)
     
-    print(f"Archivo descargado: {filepath}")
+    print(f"Archivo descargado: {filename}")
 
 def download_from_txt(txt_filename):
     with open(txt_filename, 'r') as file:
@@ -43,5 +47,5 @@ def download_from_txt(txt_filename):
         concurrent.futures.wait(futures)
 
 if __name__ == "__main__":
-    txt_filename = "links.txt"  # Cambia el nombre del archivo de texto según sea necesario
+    txt_filename = "links.txt"
     download_from_txt(txt_filename)
