@@ -4,13 +4,11 @@ mapas hechos en RStudio.
 
 archivos geopackage de argentina gracias al autor de este repo: https://github.com/vhgauto/viz :)
 
+data:
+buenos aires data: https://data.buenosaires.gob.ar/
 instituto geografico nacional: https://www.ign.gob.ar/
-Archivos geojson
 
-colorbrewer: https://colorbrewer2.org/
-Para las paletas de colores
-
-Para scrapear los archivos geoJson:
+Para scrapear los archivos geojson:
 (Se descargan de links.txt y se guardan en data/geojson)
 ```
 python3 downloader.py
