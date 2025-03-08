@@ -5,3 +5,4 @@
 data/geojson/*
 src/geoCompWithR.R
 src/samples.R
+data/ba-data/*

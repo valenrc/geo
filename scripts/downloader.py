@@ -46,6 +46,16 @@ def download_from_txt(txt_filename):
         futures = {executor.submit(download_file, url, filename) for url, filename in download_tasks}
         concurrent.futures.wait(futures)
 
+def check_connection(url):
+    try:
+        response = requests.get(url, timeout=5)
+        response.raise_for_status()
+        return True
+    except requests.RequestException as e:
+        print(f"Error al conectar con {url}: {e}")
+        return False
+
 if __name__ == "__main__":
     txt_filename = "links.txt"
-    download_from_txt(txt_filename)
+    if check_connection("https://wms.ign.gob.ar"):
+      download_from_txt(txt_filename)
