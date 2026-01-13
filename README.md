@@ -13,3 +13,8 @@ Para scrapear los archivos geojson:
 ```
 python3 downloader.py
 ```
+
+**learning resources**
+
+- geocompx, [Geocomputation with R](https://r.geocompx.org/intro)
+- Philippe Marchand, [Introduction to geospatial data analysis in R](https://pmarchand1.github.io/atelier_rgeo/rgeo_workshop.html)
