@@ -2,7 +2,9 @@
 .Rdata
 *.Rproj
 .Rproj.user
+.github
 data/geojson/*
 src/geoCompWithR.R
 src/samples.R
 data/ba-data/*
+__pycache__
